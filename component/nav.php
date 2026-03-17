@@ -22,7 +22,7 @@
             <a class="nav-link text-white" href="<?php echo $base_url; ?>#send-package">Send Package</a>
         </li>
         </ul>
-        <a href="<?php echo $base_url; ?>page/form.html" class="btn btn-main ms-lg-3 mt-3 mt-lg-0">
+        <a href="<?php echo $base_url; ?>page/form.php" class="btn btn-main ms-lg-3 mt-3 mt-lg-0">
         <i class="bi bi-send-fill me-2"></i>Get Started
         </a>
     </div>        
