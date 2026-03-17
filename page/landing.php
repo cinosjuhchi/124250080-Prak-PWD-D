@@ -298,7 +298,7 @@
       <div class="container-fluid px-sentinel">
         <div class="row align-items-center">
           <div class="col-12 col-md-6 text-center text-md-start">
-            <a class="d-inline-flex gap-2 align-items-center text-decoration-none" href="../index.html">
+            <a class="d-inline-flex gap-2 align-items-center text-decoration-none" href="../index.php">
               <img src="../assets/images/icon.png" width="40" alt="Fly Package Logo">
               <span class="fw-bold text-main">FLY PACKAGE!</span>
             </a>
