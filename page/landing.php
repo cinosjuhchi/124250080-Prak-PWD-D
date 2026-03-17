@@ -245,6 +245,7 @@
                         <h6 class="text-main fw-bold mb-1">Service Type</h6>
                         <p class="text-white-50 mb-0 small">Category: <?php echo $serviceCategoryName; ?></p>
                         <p class="text-white-50 mb-0 small">Priority: <?php echo $priorityName; ?></p>
+                        <p class="text-white-50 mb-0 small">Estimated Delivery: <?php echo $estimatedDelivery; ?></p>
                       </div>
                     </div>
                   </div>
