@@ -9,7 +9,7 @@ Proyek ini adalah tugas praktikum 2 untuk mata kuliah Pemrograman Web Dasar (PWD
 - **Kelas**: SI-D  
 
 ## Tujuan
-Proyek ini bertujuan untuk menerapkan konsep-konsep yang telah dipelajari dalam mata kuliah PWD.
+Proyek ini bertujuan untuk menerapkan konsep-konsep yang telah dipelajari dalam mata kuliah PWD dengan studi kasus website pengantaran paket via Drone otomatis.
 
 ## Instalasi
 Silakan ikuti langkah-langkah berikut untuk menjalankan proyek ini:
