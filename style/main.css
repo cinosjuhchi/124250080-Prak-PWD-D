@@ -1,0 +1,274 @@
+
+:root{
+    --primary-color: #F4F754;
+    --secondary-color: rgb(0, 0, 0);
+}
+html {
+  box-sizing: border-box;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.list-card .description {
+  height: 0px;
+  transition: 500ms ease;
+}
+
+.text-description {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.px-sentinel {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.py-sentinel {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.ps-sentinel {
+  padding-left: 10% !important;
+}
+.pe-sentinel {
+  padding-right: 10% !important;
+}
+
+.heading-main {
+  font-family: "Montserrat", sans;
+  font-weight: bold;
+}
+
+.text-stroke {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Membuat bayangan di 4 sudut */
+}
+
+.row {
+  margin: 0 !important;  
+}
+
+.bg-main {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.text-main {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn-description {
+  cursor: pointer;
+}
+
+
+.btn-main{
+    background-color: var(--primary-color);    
+    transition: all 200ms ease-in;
+}
+
+.btn-main:hover{
+    border: solid var(--primary-color) 1px;
+    transition: all 200ms ease-out;
+    color: var(--primary-color);    
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);    
+    transition: all 200ms ease-in;
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary-color);    
+    border: solid var(--primary-color) 1px;
+    transition: all 200ms ease-out;
+    color: var(--secondary-color);
+}
+
+.navbar {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 100;
+  position: fixed;
+  top: -300px;
+  transition: top 250ms ease-in-out;
+  box-shadow: 0px 7px 23px -9px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-brand-logo {
+  width: 48px;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand-text {
+  font-size: 1rem;
+  transition: font-size 0.3s ease;
+}
+
+
+.banner {
+  height: 100vh;
+}
+
+.banner__background-video {
+  height: 100vh;
+}
+
+.banner__background-video::after {
+  background-color: rgba(0, 0, 0, 0.151);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner__video {
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.banner__logo {
+  animation: floatGlow 4s ease-in-out infinite;
+}
+
+.work__logo {
+  animation: slideGlow 4s ease-in-out infinite;
+}
+
+.banner__slogan {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.social-links {
+  background: rgba(250, 224, 107, 0.397);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.social-links__icon {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.social-links__icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.list-card{
+  border: 1px dashed var(--primary-color);
+}
+
+@keyframes floatGlow {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideGlow {
+  0%,
+  100% {
+    transform: translateX(-50px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-brand-logo {
+    width: 58px;
+  }
+  .navbar-brand-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {  
+  .banner__slogan {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  @keyframes slideGlow {
+    0%,
+    100% {
+      transform: translateX(-100px);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateX(100px);
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand-logo {
+    width: 74px;
+  }
+  .navbar-brand-text {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  @keyframes slideGlow {
+    0%,
+    100% {
+      transform: translateX(-300px);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateX(300px);
+      opacity: 1;
+    }
+  }
+}
